@@ -57,14 +57,14 @@ export default function Header() {
               className="block font-body text-brand-black hover:text-dark-accent transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About
+              {t("nav.about")}
             </Link>
             <Link
               to="/contact"
               className="block bg-dark-accent text-brand-white px-6 py-2 rounded hover:bg-opacity-90 transition-all font-meta font-semibold text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Contact
+              {t("nav.contact")}
             </Link>
           </div>
         </div>
