@@ -20,14 +20,20 @@
     "paragraph4": "My past client list is a diverse range of needs and motivations, including from post-surgery recovery and strength enthusiasts.",
     "paragraph5": "I really enjoy journeying with each client I work with - sharing in the improvements seen at each step of the way.",
     "paragraph6": "Get in touch today and let's have a chat about what that might look like for you.",
-    "servicesHeading": "Services",
+    "servicesHeading": "Services: David Clunie Coaching",
     "services": [
-      "Personal Training",
-      "Assessment and Analytics",
-      "Coaching Programme",
-      "Nutrition Advice",
-      "Strength & Conditioning",
-      "Lifestyle Adjustment"
+      {
+        "title": "Personal Training",
+        "subtitle": "Assessment and Analytics"
+      },
+      {
+        "title": "Coaching Programme",
+        "subtitle": "Nutrition Advice"
+      },
+      {
+        "title": "Strength & Conditioning",
+        "subtitle": "Lifestyle Adjustment"
+      }
     ],
     "contactMeCta": "Contact Me"
   },
