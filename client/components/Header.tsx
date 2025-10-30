@@ -25,13 +25,13 @@ export default function Header() {
             to="/about"
             className="font-body text-brand-black hover:text-dark-accent transition-colors"
           >
-            About
+            {t("nav.about")}
           </Link>
           <Link
             to="/contact"
             className="bg-dark-accent text-brand-white px-6 py-2 rounded hover:bg-opacity-90 transition-all font-meta font-semibold"
           >
-            Contact
+            {t("nav.contact")}
           </Link>
         </nav>
 
