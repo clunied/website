@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to David Clunie Coaching",
+    "description": "I'm a Shoreditch-based Personal Trainer with over 10 years of coaching and training experience. I specialise in client-centred, science-led coaching. I believe that an approach that puts you as the client in the driving seat achieves the best results - so come on in, have a look around and let's have a chat about how we can work together to make the difference you want.",
+    "cta": "About",
+    "tagline": "BUILD MUSCLE | LOSE FAT | MOVE BETTER"
+  },
+  "section": {
+    "headline": "Science Led | Results Driven | Client Centred"
+  },
+  "footer": {
+    "companyName": "David Clunie Coaching",
+    "tel": "+44 (0) 7715 848 437",
+    "email": "david@davidcluniecoaching.com",
+    "copyright": "© 2024 davidcluniecoaching.com. All rights reserved."
+  }
+}
