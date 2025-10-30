@@ -61,9 +61,7 @@ export default function About() {
                   key={index}
                   className="bg-brand-black text-brand-white p-8 rounded-lg hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="font-heading text-h4 font-bold">
-                    {service}
-                  </h3>
+                  <h3 className="font-heading text-h4 font-bold">{service}</h3>
                 </div>
               ),
             )}
