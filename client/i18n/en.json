@@ -12,6 +12,31 @@
   "section": {
     "headline": "Science Led | Results Driven | Client Centred"
   },
+  "about": {
+    "heading": "Hi, I'm David.",
+    "paragraph1": "With over a decade of experience in performance enhancement, I offer particular expertise to help you realise your goals and surpass what you thought possible. My knowledge has been built from coaching elite athletes at national and international levels and translating this learning to the world of personal training - this means I have insightful advice and practical techniques that help bring a tangible improvement to your training. While you don't need to be an elite athlete, we can borrow valuable techniques from that world to help you.",
+    "paragraph2": "Using a systematic approach to assessment and program design, I deliver targeted training interventions for the best results. I believe in the insights science now offers modern sport and have seen the difference they make, not just on the elite stage but to everyday workouts too. This kind of personalised methodology enhances physical adaptations and cultivates autonomy and confidence in the studio - that's a game changer for us when we train.",
+    "paragraph3": "My passion for training and coaching stems from representing Scotland in high jump and triple jump events, igniting a fascination with improving athleticism. Studying coaching at university level deepened my understanding which complemented my practical experience with athletes of diverse backgrounds.",
+    "paragraph4": "My past client list is a diverse range of needs and motivations, including from post-surgery recovery and strength enthusiasts.",
+    "paragraph5": "I really enjoy journeying with each client I work with - sharing in the improvements seen at each step of the way.",
+    "paragraph6": "Get in touch today and let's have a chat about what that might look like for you.",
+    "servicesHeading": "Services",
+    "services": [
+      {
+        "title": "Personal Training",
+        "subtitle": "Assessment and Analytics"
+      },
+      {
+        "title": "Coaching Programme",
+        "subtitle": "Nutrition Advice"
+      },
+      {
+        "title": "Strength & Conditioning",
+        "subtitle": "Lifestyle Adjustment"
+      }
+    ],
+    "contactMeCta": "Contact Me"
+  },
   "footer": {
     "companyName": "David Clunie Coaching",
     "tel": "+44 (0) 7715 848 437",
