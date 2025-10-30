@@ -19,25 +19,25 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="text-center md:text-right space-y-2">
             <h3 className="font-heading text-lg font-semibold">
-              David Clunie Coaching
+              {t("footer.companyName")}
             </h3>
             <div className="font-body text-sm space-y-1">
               <p>
                 Tel:{" "}
                 <a
-                  href="tel:+442771584437"
+                  href={`tel:+442771584437`}
                   className="hover:text-accent transition-colors"
                 >
-                  +44 (0) 7715 848 437
+                  {t("footer.tel")}
                 </a>
               </p>
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:david@davidcluniecoaching.com"
+                  href={`mailto:${t("footer.email")}`}
                   className="hover:text-accent transition-colors"
                 >
-                  david@davidcluniecoaching.com
+                  {t("footer.email")}
                 </a>
               </p>
             </div>
@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-dark-accent mt-8 pt-8 text-center text-sm font-body text-light-accent">
-          <p>© 2024 davidcluniecoaching.com. All rights reserved.</p>
+          <p>{t("footer.copyright")}</p>
         </div>
       </div>
     </footer>
