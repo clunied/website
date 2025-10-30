@@ -22,18 +22,12 @@
     "paragraph6": "Get in touch today and let's have a chat about what that might look like for you.",
     "servicesHeading": "Services",
     "services": [
-      {
-        "title": "Personal Training",
-        "subtitle": "Assessment and Analytics"
-      },
-      {
-        "title": "Coaching Programme",
-        "subtitle": "Nutrition Advice"
-      },
-      {
-        "title": "Strength & Conditioning",
-        "subtitle": "Lifestyle Adjustment"
-      }
+      "Personal Training",
+      "Assessment and Analytics",
+      "Coaching Programme",
+      "Nutrition Advice",
+      "Strength & Conditioning",
+      "Lifestyle Adjustment"
     ],
     "contactMeCta": "Contact Me"
   },
