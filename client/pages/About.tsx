@@ -13,7 +13,7 @@ export default function About() {
             {/* Left: Image */}
             <div className="order-2 md:order-1">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/6452437a9c32675e48bf7484/1683112833405-4N3LNXXGXSGI5YBQMCT1/White+Block.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
                 alt="David Clunie"
                 className="w-full h-auto rounded-lg"
               />
