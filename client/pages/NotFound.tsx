@@ -18,7 +18,8 @@ const NotFound = () => {
           404
         </h1>
         <p className="font-body text-lg-text text-brand-black mb-8">
-          Page not found. This page doesn't exist yet. Continue customizing it in the chat if you'd like to add it.
+          Page not found. This page doesn't exist yet. Continue customizing it
+          in the chat if you'd like to add it.
         </p>
         <Link
           to="/"

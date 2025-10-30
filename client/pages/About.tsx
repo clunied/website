@@ -38,7 +38,8 @@ export default function About() {
                   >
                     Get in touch
                   </Link>{" "}
-                  today and let's have a chat about what that might look like for you.
+                  today and let's have a chat about what that might look like
+                  for you.
                 </p>
               </div>
             </div>
@@ -54,19 +55,21 @@ export default function About() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {t("about.services", { returnObjects: true }).map((service: { title: string; subtitle: string }, index: number) => (
-              <div
-                key={index}
-                className="bg-brand-black text-brand-white p-8 rounded-lg hover:shadow-lg transition-shadow"
-              >
-                <h3 className="font-heading text-h4 font-bold mb-2">
-                  {service.title}
-                </h3>
-                <p className="font-body text-sm-text text-light-accent">
-                  {service.subtitle}
-                </p>
-              </div>
-            ))}
+            {t("about.services", { returnObjects: true }).map(
+              (service: { title: string; subtitle: string }, index: number) => (
+                <div
+                  key={index}
+                  className="bg-brand-black text-brand-white p-8 rounded-lg hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="font-heading text-h4 font-bold mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="font-body text-sm-text text-light-accent">
+                    {service.subtitle}
+                  </p>
+                </div>
+              ),
+            )}
           </div>
 
           {/* CTA Button */}

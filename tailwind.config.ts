@@ -19,12 +19,12 @@ export default {
         meta: ["Proxima Nova", "sans-serif"],
       },
       fontSize: {
-        "h1": "4rem",
-        "h2": "2.8rem",
-        "h3": "2.2rem",
-        "h4": "1.6rem",
+        h1: "4rem",
+        h2: "2.8rem",
+        h3: "2.2rem",
+        h4: "1.6rem",
         "lg-text": "1.2rem",
-        "normal": "1.1rem",
+        normal: "1.1rem",
         "sm-text": "1rem",
       },
       colors: {

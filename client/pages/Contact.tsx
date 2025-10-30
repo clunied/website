@@ -11,7 +11,8 @@ export default function Contact() {
             Contact Page
           </h1>
           <p className="font-body text-lg-text text-brand-black mb-8">
-            This page is currently a placeholder. Continue customizing it in the chat to build out your Contact page with a form or contact details.
+            This page is currently a placeholder. Continue customizing it in the
+            chat to build out your Contact page with a form or contact details.
           </p>
           <button
             onClick={() => navigate("/")}
