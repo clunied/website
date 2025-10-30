@@ -13,6 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ["Josefin Sans", "sans-serif"],
+        body: ["Hypatia Sans Pro", "sans-serif"],
+        meta: ["Proxima Nova", "sans-serif"],
+      },
+      fontSize: {
+        "h1": "4rem",
+        "h2": "2.8rem",
+        "h3": "2.2rem",
+        "h4": "1.6rem",
+        "lg-text": "1.2rem",
+        "normal": "1.1rem",
+        "sm-text": "1rem",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -39,6 +53,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        "dark-accent": "hsl(var(--dark-accent))",
+        "light-accent": "hsl(var(--light-accent))",
+        "brand-black": "hsl(var(--brand-black))",
+        "brand-white": "hsl(var(--brand-white))",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
