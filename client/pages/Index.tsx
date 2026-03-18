@@ -18,22 +18,14 @@ export default function Index() {
           <p className="font-body text-lg-text leading-relaxed mb-12 text-light-accent">
             {t("hero.description")}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://wa.me/447715848437"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-dark-accent text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-opacity-90 transition-all"
-            >
-              {t("hero.primaryCta")}
-            </a>
-            <Link
-              to="/about"
-              className="inline-block border-2 border-brand-white text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-brand-white hover:text-brand-black transition-all"
-            >
-              {t("hero.secondaryCta")}
-            </Link>
-          </div>
+          <a
+            href="https://wa.me/447715848437"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-dark-accent text-brand-black px-8 py-3 rounded-full font-meta font-semibold hover:bg-opacity-90 transition-all"
+          >
+            {t("hero.primaryCta")}
+          </a>
         </div>
       </section>
 
