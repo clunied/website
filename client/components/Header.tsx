@@ -8,14 +8,14 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-brand-black border-b border-light-accent">
+    <header className="bg-brand-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
             src="https://images.squarespace-cdn.com/content/v1/6452437a9c32675e48bf7484/39065356-6fba-4236-a0e2-49d09cc5a994/David+Clunie+Logo.png"
             alt="David Clunie Coaching"
-            className="h-20 w-auto"
+            className="h-24 w-auto"
           />
         </Link>
 
@@ -29,7 +29,7 @@ export default function Header() {
           </Link>
           <Link
             to="/contact"
-            className="bg-dark-accent text-brand-black px-6 py-2 rounded hover:bg-opacity-90 transition-all font-meta font-semibold"
+            className="bg-brand-black text-brand-white border border-dark-accent px-6 py-2 rounded-full hover:bg-dark-accent transition-all font-meta font-semibold"
           >
             {t("nav.contact")}
           </Link>
@@ -50,7 +50,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-brand-black border-t border-light-accent">
+        <div className="md:hidden bg-brand-black">
           <div className="px-4 py-4 space-y-4">
             <Link
               to="/about"
@@ -61,7 +61,7 @@ export default function Header() {
             </Link>
             <Link
               to="/contact"
-              className="block bg-dark-accent text-brand-black px-6 py-2 rounded hover:bg-opacity-90 transition-all font-meta font-semibold text-center"
+              className="block bg-brand-black text-brand-white border border-dark-accent px-6 py-2 rounded-full hover:bg-dark-accent transition-all font-meta font-semibold text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t("nav.contact")}

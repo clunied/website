@@ -12,7 +12,7 @@ export default function Footer() {
             <img
               src="https://images.squarespace-cdn.com/content/v1/6452437a9c32675e48bf7484/39065356-6fba-4236-a0e2-49d09cc5a994/David+Clunie+Logo.png"
               alt="David Clunie Coaching"
-              className="h-12 w-auto"
+              className="h-24 w-auto"
             />
           </div>
 
