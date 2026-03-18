@@ -54,14 +54,14 @@ export default function About() {
             {t("about.servicesHeading")}
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+          <div className="grid grid-cols-1 gap-12 mb-12">
             {t("about.services", { returnObjects: true }).map(
               (service: { title: string; subtitle: string }, index: number) => (
                 <div key={index} className="text-brand-black">
-                  <h3 className="font-heading font-bold text-lg-text mb-2">
+                  <h3 className="font-heading font-bold text-lg-text mb-4">
                     {service.title}
                   </h3>
-                  <p className="font-body text-normal text-muted-foreground">
+                  <p className="font-body text-normal text-muted-foreground leading-relaxed">
                     {service.subtitle}
                   </p>
                 </div>

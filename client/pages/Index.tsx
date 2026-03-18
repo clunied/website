@@ -9,29 +9,34 @@ export default function Index() {
       {/* Hero Section */}
       <section className="min-h-screen bg-brand-black text-brand-white flex items-center justify-center px-4 py-20 md:py-0">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="font-heading text-h1 font-bold mb-6 leading-tight">
+          <h2 className="font-heading text-h2 font-bold mb-6 leading-tight">
             {t("hero.welcome")}
-          </h1>
-          <p className="font-body text-lg-text leading-relaxed mb-8 text-light-accent">
+          </h2>
+          <h3 className="font-heading text-h4 font-semibold mb-8 tracking-wider">
+            BUILD MUSCLE | MOVE BETTER | TRAIN WITH CONFIDENCE
+          </h3>
+          <p className="font-body text-lg-text leading-relaxed mb-12 text-light-accent">
             {t("hero.description")}
           </p>
-          <Link
-            to="/about"
-            className="inline-block bg-dark-accent text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-opacity-90 transition-all"
-          >
-            {t("hero.cta")}
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://wa.me/447715848437"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-dark-accent text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-opacity-90 transition-all"
+            >
+              {t("hero.primaryCta")}
+            </a>
+            <Link
+              to="/about"
+              className="inline-block border-2 border-brand-white text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-brand-white hover:text-brand-black transition-all"
+            >
+              {t("hero.secondaryCta")}
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Tagline Section */}
-      <section className="bg-brand-black text-brand-white py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-heading text-h4 font-semibold tracking-wider">
-            {t("hero.tagline")}
-          </p>
-        </div>
-      </section>
 
       {/* Science Led Section with Background */}
       <section

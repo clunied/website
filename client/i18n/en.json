@@ -4,35 +4,44 @@
     "contact": "Contact"
   },
   "hero": {
-    "welcome": "Welcome to David Clunie Coaching",
-    "description": "I'm a Shoreditch-based Personal Trainer with over 10 years of coaching and training experience. I specialise in client-centred, science-led coaching. I believe that an approach that puts you as the client in the driving seat achieves the best results - so come on in, have a look around and let's have a chat about how we can work together to make the difference you want.",
-    "cta": "About",
-    "tagline": "BUILD MUSCLE | LOSE FAT | MOVE BETTER"
+    "welcome": "David Clunie Coaching",
+    "description": "A structured, research-informed coaching approach that adapts to your needs and helps you make meaningful, sustainable progress.",
+    "primaryCta": "Send Me a Message",
+    "secondaryCta": "About",
+    "tagline": "BUILD MUSCLE | MOVE BETTER | TRAIN WITH CONFIDENCE"
   },
   "section": {
     "headline": "Science Led | Results Driven | Client Centred"
   },
   "about": {
     "heading": "Hi, I'm David.",
-    "paragraph1": "With over a decade of experience in performance enhancement, I offer particular expertise to help you realise your goals and surpass what you thought possible. My knowledge has been built from coaching elite athletes at national and international levels and translating this learning to the world of personal training - this means I have insightful advice and practical techniques that help bring a tangible improvement to your training. While you don't need to be an elite athlete, we can borrow valuable techniques from that world to help you.",
-    "paragraph2": "Using a systematic approach to assessment and program design, I deliver targeted training interventions for the best results. I believe in the insights science now offers modern sport and have seen the difference they make, not just on the elite stage but to everyday workouts too. This kind of personalised methodology enhances physical adaptations and cultivates autonomy and confidence in the studio - that's a game changer for us when we train.",
-    "paragraph3": "My passion for training and coaching stems from representing Scotland in high jump and triple jump events, igniting a fascination with improving athleticism. Studying coaching at university level deepened my understanding which complemented my practical experience with athletes of diverse backgrounds.",
-    "paragraph4": "My past client list is a diverse range of needs and motivations, including from post-surgery recovery and strength enthusiasts.",
-    "paragraph5": "I really enjoy journeying with each client I work with - sharing in the improvements seen at each step of the way.",
-    "paragraph6": "Get in touch today and let's have a chat about what that might look like for you.",
+    "paragraph1": "I'm a personal trainer based in Shoreditch with over a decade of coaching experience, helping people build strength, muscle, and confidence through structured, thoughtful training.",
+    "paragraph2": "My approach comes from a background in performance sport - coaching athletes at national and international levels - and translating what works in that world into training that makes sense for everyday life. You don't need to be an athlete to benefit from the principles that drive real progress; you just need a plan that's built around you.",
+    "paragraph3": "I take a clear, methodical approach to assessment and programme design. That means understanding how you move, what you need, and what matters most to you - then creating a plan that's realistic, effective, and genuinely enjoyable to follow. Good coaching should help you train better, move better, and feel more confident in the gym.",
+    "paragraph4": "Before coaching, I represented Scotland in high jump and triple jump, which sparked a long-standing interest in developing athleticism. Studying coaching at university deepened that fascination and shaped the way I work today: evidence-informed, structured, and centred around helping people progress in a sustainable way.",
+    "paragraph5": "I've worked with clients from many different backgrounds - from people returning after injury to those wanting to build muscle, improve technique, or simply find consistency again. What I enjoy most is seeing someone realise what they're capable of and grow more confident each week.",
+    "paragraph6": "If you'd like to explore what working together could look like, feel free to get in touch - happy to help you get started.",
     "servicesHeading": "Services: David Clunie Coaching",
     "services": [
       {
-        "title": "Personal Training",
-        "subtitle": "Assessment and Analytics"
+        "title": "Strength Training",
+        "subtitle": "Personalised strength training built around you - your structure, your movement, your training history and your goals. I take the time to choose exercises that genuinely fit the individual, rather than forcing a standard template. Every plan is designed to be effective, manageable and sustainable, whether you're training with me or on your own."
       },
       {
-        "title": "Coaching Programme",
-        "subtitle": "Nutrition Advice"
+        "title": "Muscle Building",
+        "subtitle": "A practical, methodical approach to hypertrophy that focuses on good exercise selection, clear technique, and smart progression. Think: movements that suit your morphology, train the muscle in its most effective positions, avoid redundancy, and leave no gaps."
       },
       {
-        "title": "Strength & Conditioning",
-        "subtitle": "Lifestyle Adjustment"
+        "title": "Programme Design",
+        "subtitle": "Tailored, easy-to-follow training plans designed for your gym set-up, schedule and goals. Every exercise is chosen deliberately, every session is structured for efficiency, and nothing is wasted - ideal if you want clarity when training on your own."
+      },
+      {
+        "title": "Movement Assessment",
+        "subtitle": "I've completed various movement assessment courses over the years, and my current approach most closely resembles the MPA. It's practical, relevant, and helps me focus on what you can do right now - giving us a clear, positive starting point. The aim is simply to understand how you move so we can choose exercises and variations that fit your body and make your training feel better and work more effectively."
+      },
+      {
+        "title": "Return-to-Training After Injury",
+        "subtitle": "I take a gradual, sensible approach to returning to training after injury. Pain and injury are influenced by a lot of factors - not just the exercises themselves - so I look at the whole picture: training history, current movement, confidence, stress, sleep and day-to-day load. Sometimes adjusting lifestyle factors is just as important as adjusting exercises or technique. The goal is to find variations that feel good, rebuild strength and confidence at the right pace, and help you return to consistent, effective training without feeling rushed or pushed too hard."
       }
     ],
     "contactMeCta": "Contact Me"
