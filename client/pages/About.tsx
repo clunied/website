@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Button from "@/components/Button";
 
 export default function About() {
   const { t } = useTranslation();
@@ -38,12 +39,9 @@ export default function About() {
                 <p>{t("about.paragraph5")}</p>
                 <p>
                   {t("about.paragraph6")}{" "}
-                  <Link
-                    to="/contact"
-                    className="text-dark-accent hover:underline font-semibold"
-                  >
+                  <Button href="/contact" variant="text">
                     Get in touch
-                  </Link>{" "}
+                  </Button>{" "}
                   today and let's have a chat about what that might look like
                   for you.
                 </p>
@@ -89,12 +87,9 @@ export default function About() {
 
           {/* CTA Button */}
           <div className="text-center">
-            <Link
-              to="/contact"
-              className="inline-block bg-dark-accent text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-opacity-90 transition-all"
-            >
+            <Button href="/contact" variant="secondary">
               {t("about.contactMeCta")}
-            </Link>
+            </Button>
           </div>
         </div>
       </section>

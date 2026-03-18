@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import Button from "./Button";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -27,12 +28,9 @@ export default function Header() {
           >
             {t("nav.about")}
           </Link>
-          <Link
-            to="/contact"
-            className="bg-brand-black text-brand-white border border-dark-accent px-6 py-2 rounded-full hover:bg-dark-accent transition-all font-meta font-semibold"
-          >
+          <Button href="/contact" variant="secondary">
             {t("nav.contact")}
-          </Link>
+          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -59,13 +57,14 @@ export default function Header() {
             >
               {t("nav.about")}
             </Link>
-            <Link
-              to="/contact"
-              className="block bg-brand-black text-brand-white border border-dark-accent px-6 py-2 rounded-full hover:bg-dark-accent transition-all font-meta font-semibold text-center"
+            <Button
+              href="/contact"
+              variant="secondary"
+              className="w-full text-center block"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t("nav.contact")}
-            </Link>
+            </Button>
           </div>
         </div>
       )}

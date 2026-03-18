@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Button from "@/components/Button";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -19,20 +20,16 @@ export default function Index() {
             {t("hero.description")}
           </p>
           <div className="flex flex-col gap-4 justify-center items-center">
-            <a
+            <Button
               href="https://wa.me/447715848437"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-dark-accent text-brand-black px-8 py-3 rounded-full font-meta font-semibold hover:bg-opacity-90 transition-all"
+              variant="primary"
+              external
             >
               {t("hero.primaryCta")}
-            </a>
-            <Link
-              to="/about"
-              className="inline-block text-brand-white px-8 py-3 font-meta font-semibold hover:underline transition-all"
-            >
+            </Button>
+            <Button href="/about" variant="text">
               {t("hero.secondaryCta")}
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
