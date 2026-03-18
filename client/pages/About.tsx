@@ -10,17 +10,8 @@ export default function About() {
       <section className="bg-brand-black text-brand-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Left: Image */}
-            <div className="order-2 md:order-1">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
-                alt="David Clunie"
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-
-            {/* Right: Text Content */}
-            <div className="order-1 md:order-2">
+            {/* Left: Text Content */}
+            <div>
               <h1 className="font-heading text-h2 font-bold mb-6 leading-tight">
                 {t("about.heading")}
               </h1>
@@ -43,6 +34,15 @@ export default function About() {
                 </p>
               </div>
             </div>
+
+            {/* Right: Image */}
+            <div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
+                alt="David Clunie"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -54,14 +54,17 @@ export default function About() {
             {t("about.servicesHeading")}
           </h2>
 
-          <div className="grid grid-cols-1 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {t("about.services", { returnObjects: true }).map(
               (service: { title: string; subtitle: string }, index: number) => (
-                <div key={index} className="text-brand-black">
-                  <h3 className="font-heading font-bold text-lg-text mb-4">
+                <div
+                  key={index}
+                  className="bg-light-accent bg-opacity-20 border border-light-accent rounded-lg p-8 text-brand-black hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="font-heading font-bold text-lg-text mb-4 text-brand-black">
                     {service.title}
                   </h3>
-                  <p className="font-body text-normal text-muted-foreground leading-relaxed">
+                  <p className="font-body text-normal text-brand-black leading-relaxed">
                     {service.subtitle}
                   </p>
                 </div>
