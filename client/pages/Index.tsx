@@ -37,6 +37,24 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* Science Led Section with Background */}
+      <section
+        className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center py-20 md:py-0"
+        style={{
+          backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/6452437a9c32675e48bf7484/7641e0d5-eaae-45fb-9886-d35f3b268376/637525d59ffb3-1668621781.jpg')`,
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-brand-black opacity-30"></div>
+
+        {/* Content */}
+        <div className="relative max-w-3xl mx-auto text-center px-4 z-10">
+          <h2 className="font-heading text-h2 font-bold text-brand-white leading-tight">
+            {t("section.headline")}
+          </h2>
+        </div>
+      </section>
     </div>
   );
 }

@@ -50,10 +50,10 @@ export default function Header() {
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-brand-black">
-          <div className="px-4 py-4 space-y-4">
+          <div className="px-4 py-4 space-y-4 flex flex-col items-center">
             <Link
               to="/about"
-              className="block font-body text-brand-white hover:text-light-accent transition-colors"
+              className="font-body text-brand-white hover:text-light-accent transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t("nav.about")}
@@ -61,7 +61,6 @@ export default function Header() {
             <Button
               href="/contact"
               variant="secondary"
-              className="w-full text-center block"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t("nav.contact")}
