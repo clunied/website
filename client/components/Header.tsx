@@ -13,7 +13,7 @@ export default function Header({ transparent = false }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className={transparent ? "bg-transparent" : "bg-brand-black"}>
+    <header className={transparent ? "fixed top-0 left-0 right-0 z-50 bg-transparent" : "relative bg-brand-black"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
