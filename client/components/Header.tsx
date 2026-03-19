@@ -4,12 +4,16 @@ import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
 
-export default function Header() {
+interface HeaderProps {
+  transparent?: boolean;
+}
+
+export default function Header({ transparent = false }: HeaderProps) {
   const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-brand-black">
+    <header className={transparent ? "bg-transparent" : "bg-brand-black"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
@@ -49,7 +53,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-brand-black">
+        <div className={`md:hidden ${transparent ? "bg-brand-black bg-opacity-90" : "bg-brand-black"}`}>
           <div className="px-4 py-4 space-y-4 flex flex-col items-center">
             <Link
               to="/about"

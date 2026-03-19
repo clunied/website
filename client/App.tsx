@@ -15,9 +15,9 @@ import Footer from "@/components/Footer";
 
 const queryClient = new QueryClient();
 
-const Layout = ({ children }: { children: React.ReactNode }) => (
+const Layout = ({ children, transparentHeader = false }: { children: React.ReactNode; transparentHeader?: boolean }) => (
   <div className="flex flex-col min-h-screen">
-    <Header />
+    <Header transparent={transparentHeader} />
     <main className="flex-1">{children}</main>
     <Footer />
   </div>
@@ -49,7 +49,7 @@ const App = () => (
           <Route
             path="/contact"
             element={
-              <Layout>
+              <Layout transparentHeader={true}>
                 <Contact />
               </Layout>
             }

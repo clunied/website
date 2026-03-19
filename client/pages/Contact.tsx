@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 export default function Contact() {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     subject: "",
     message: "",
@@ -23,35 +24,42 @@ export default function Contact() {
     // Handle form submission here
     console.log("Form submitted:", formData);
     setSubmitted(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
     setTimeout(() => setSubmitted(false), 5000);
   };
 
   return (
-    <div className="w-full bg-brand-white">
-      {/* Hero Section */}
-      <section className="bg-brand-black text-brand-white py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-h2 font-bold mb-4">Contact</h1>
-        </div>
-      </section>
+    <div
+      className="w-full relative min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/6452437a9c32675e48bf7484/7641e0d5-eaae-45fb-9886-d35f3b268376/637525d59ffb3-1668621781.jpg')`,
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-brand-black opacity-40"></div>
 
-      {/* Contact Content */}
-      <section className="py-16 md:py-24">
+      {/* Content */}
+      <div className="relative z-10 pt-20 md:pt-32 pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Heading */}
+          <h1 className="font-heading text-h2 font-bold text-brand-white mb-12">
+            Contact
+          </h1>
+
+          {/* Contact Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Left Column - Intro & Email */}
             <div>
-              <p className="font-body text-lg-text text-brand-black mb-6 leading-relaxed">
+              <p className="font-body text-lg-text text-brand-white mb-6 leading-relaxed">
                 Get in touch to chat more about the kind of help you need.
               </p>
-              <p className="font-body text-normal text-brand-black mb-8 leading-relaxed">
+              <p className="font-body text-normal text-brand-white mb-8 leading-relaxed">
                 You can contact me via the email below or send a message using
                 the contact form on this page.
               </p>
 
               <div className="mb-8">
-                <p className="font-heading font-semibold text-brand-black mb-2">
+                <p className="font-heading font-semibold text-brand-white mb-2">
                   Email
                 </p>
                 <a
@@ -63,7 +71,7 @@ export default function Contact() {
               </div>
 
               <div className="mb-8">
-                <p className="font-heading font-semibold text-brand-black mb-2">
+                <p className="font-heading font-semibold text-brand-white mb-2">
                   Telephone
                 </p>
                 <a
@@ -84,31 +92,52 @@ export default function Contact() {
               )}
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block font-body font-semibold text-brand-black mb-2"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black"
-                    placeholder="Your name"
-                  />
+                {/* First Name and Last Name in a row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      htmlFor="firstName"
+                      className="block font-body font-semibold text-brand-white mb-2"
+                    >
+                      First Name (required)
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black bg-brand-white"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="lastName"
+                      className="block font-body font-semibold text-brand-white mb-2"
+                    >
+                      Last Name (required)
+                    </label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black bg-brand-white"
+                      placeholder="Last Name"
+                    />
+                  </div>
                 </div>
 
                 <div>
                   <label
                     htmlFor="email"
-                    className="block font-body font-semibold text-brand-black mb-2"
+                    className="block font-body font-semibold text-brand-white mb-2"
                   >
-                    Email
+                    Email (required)
                   </label>
                   <input
                     type="email"
@@ -117,7 +146,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black"
+                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black bg-brand-white"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -125,9 +154,9 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block font-body font-semibold text-brand-black mb-2"
+                    className="block font-body font-semibold text-brand-white mb-2"
                   >
-                    Subject
+                    Subject (required)
                   </label>
                   <input
                     type="text"
@@ -136,7 +165,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black"
+                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black bg-brand-white"
                     placeholder="What is this about?"
                   />
                 </div>
@@ -144,9 +173,9 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block font-body font-semibold text-brand-black mb-2"
+                    className="block font-body font-semibold text-brand-white mb-2"
                   >
-                    Message
+                    Message (required)
                   </label>
                   <textarea
                     id="message"
@@ -155,14 +184,14 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black resize-none"
+                    className="w-full px-4 py-2 border border-light-accent rounded focus:outline-none focus:border-dark-accent focus:ring-1 focus:ring-dark-accent font-body text-brand-black bg-brand-white resize-none"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-dark-accent text-brand-white px-8 py-3 rounded font-meta font-semibold hover:bg-opacity-90 transition-all"
+                  className="w-full bg-dark-accent text-brand-black px-8 py-3 rounded font-meta font-semibold hover:bg-opacity-90 transition-all"
                 >
                   Send
                 </button>
@@ -170,7 +199,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
