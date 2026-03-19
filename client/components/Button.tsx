@@ -30,7 +30,7 @@ export default function Button({
     primary:
       "bg-dark-accent text-brand-black px-8 py-3 rounded-full hover:bg-opacity-90",
     secondary:
-      "bg-brand-black text-brand-white border border-dark-accent px-6 py-2 rounded-full hover:bg-dark-accent",
+      "bg-brand-black text-brand-white px-6 py-2 rounded-full hover:bg-dark-accent border border-brand-black hover:border-dark-accent",
     text: "text-brand-white hover:underline",
   };
 
