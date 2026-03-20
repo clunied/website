@@ -49,7 +49,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-brand-black opacity-30"></div>
 
         {/* Content */}
-        <div className="relative max-w-3xl mx-auto text-center px-4 z-10">
+        <div className="relative max-w-3xl mx-auto text-center px-4 z-10" style={{ marginLeft: "170px", marginRight: "auto" }}>
           <h2 className="font-heading text-h2 font-bold text-brand-white leading-tight">
             {t("section.headline")}
           </h2>

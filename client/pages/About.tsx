@@ -67,12 +67,13 @@ export default function About() {
             {t("about.servicesHeading")}
           </h2>
 
-          <div className="grid grid-cols-1 gap-6 mb-12">
+          <div className="flex flex-wrap gap-6 mb-12 justify-center">
             {t("about.services", { returnObjects: true }).map(
               (service: { title: string; subtitle: string }, index: number) => (
                 <div
                   key={index}
-                  className="bg-brand-white rounded-lg p-8 text-brand-black shadow-sm hover:shadow-md transition-shadow border border-light-accent border-opacity-30"
+                  className="bg-brand-white rounded-lg p-8 text-brand-black shadow-sm hover:shadow-md transition-shadow border border-light-accent border-opacity-30 w-full sm:w-80"
+                  style={{ maxWidth: "300px" }}
                 >
                   <h3 className="font-heading font-bold text-lg-text mb-4 text-brand-black">
                     {service.title}
