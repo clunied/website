@@ -51,5 +51,27 @@
     "tel": "+44 (0) 7715 848 437",
     "email": "david@davidcluniecoaching.com",
     "copyright": "© 2026 davidcluniecoaching.com. All rights reserved."
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro1": "Get in touch to chat more about the kind of help you need.",
+    "intro2": "You can contact me via the email below or send a message using the contact form on this page.",
+    "emailLabel": "Email",
+    "telLabel": "Telephone",
+    "mailtoSubject": "Online Web Enquiry: David Clunie Coaching",
+    "successMessage": "Thank you! Your message has been sent successfully.",
+    "firstNameLabel": "First Name (required)",
+    "firstNamePlaceholder": "First Name",
+    "lastNameLabel": "Last Name (required)",
+    "lastNamePlaceholder": "Last Name",
+    "yourEmailLabel": "Email (required)",
+    "yourEmailPlaceholder": "your@email.com",
+    "messageLabel": "Message (required)",
+    "messagePlaceholder": "Your message...",
+    "send": "Send",
+    "sending": "Sending…",
+    "subjectLine": "Website Contact Form Submission",
+    "errorNoEndpoint": "Contact form is not configured. Please try again later.",
+    "errorSendFailed": "Something went wrong. Please try again or email us directly."
   }
 }
