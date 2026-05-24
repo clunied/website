@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -78,7 +79,7 @@ export default function Contact() {
       <div className="absolute inset-0 bg-brand-black opacity-40"></div>
 
       {/* Content */}
-      <div className="relative z-10 pt-32 md:pt-40 pb-16 md:pb-24">
+      <div className="relative z-10 pt-48 md:pt-40 pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
           <h1 className="font-heading text-h2 font-bold text-brand-white mb-12">
@@ -92,6 +93,17 @@ export default function Contact() {
               <p className="font-body text-lg-text text-brand-white mb-6 leading-relaxed">
                 {t("contact.intro1")}
               </p>
+
+              <div className="p-8 text-center">
+                <Button
+                  href="https://wa.me/447715848437"
+                  variant="primary"
+                  external
+                >
+                  {t("hero.ctaWhatsapp")}
+                </Button>
+              </div>
+
               <p className="font-body text-normal text-brand-white mb-8 leading-relaxed">
                 {t("contact.intro2")}
               </p>

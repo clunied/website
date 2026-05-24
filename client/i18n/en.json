@@ -8,6 +8,7 @@
     "description": "A structured, research-informed coaching approach that adapts to your needs and helps you make meaningful, sustainable progress.",
     "primaryCta": "Send Me a Message",
     "secondaryCta": "About",
+    "ctaWhatsapp": "Message me on WhatsApp",
     "tagline": "BUILD MUSCLE | MOVE BETTER | TRAIN WITH CONFIDENCE"
   },
   "section": {
@@ -55,7 +56,7 @@
   "contact": {
     "heading": "Contact",
     "intro1": "Get in touch to chat more about the kind of help you need.",
-    "intro2": "You can contact me via the email below or send a message using the contact form on this page.",
+    "intro2": "You can also contact me via the email below, or send a message using the contact form on this page.",
     "emailLabel": "Email",
     "telLabel": "Telephone",
     "mailtoSubject": "Online Web Enquiry: David Clunie Coaching",

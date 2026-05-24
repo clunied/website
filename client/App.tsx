@@ -5,23 +5,25 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { useEffect } from "react";
+import { Layout } from "./Layout";
 
 const queryClient = new QueryClient();
 
-const Layout = ({ children, transparentHeader = false }: { children: React.ReactNode; transparentHeader?: boolean }) => (
-  <div className="flex flex-col min-h-screen">
-    <Header transparent={transparentHeader} />
-    <main className="flex-1">{children}</main>
-    <Footer />
-  </div>
-);
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -29,6 +31,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"

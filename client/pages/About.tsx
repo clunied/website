@@ -8,25 +8,22 @@ export default function About() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-brand-black text-brand-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <section className="bg-brand-black text-brand-white pt-48">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
           {/* Title */}
           <h1 className="font-heading text-h2 font-bold mb-6 leading-tight md:hidden">
             {t("about.heading")}
           </h1>
 
-          {/* Image - appears on mobile after title */}
-          <div className="md:hidden mb-8">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
-              alt="David Clunie"
-              className="w-full h-auto rounded-lg"
-            />
-          </div>
-
           {/* Desktop and mobile layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Left: Text Content */}
+            <div className="md:block">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
+                alt="David Clunie"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
             <div>
               <h1 className="font-heading text-h2 font-bold mb-6 leading-tight hidden md:block">
                 {t("about.heading")}
@@ -47,15 +44,6 @@ export default function About() {
                 </p>
               </div>
             </div>
-
-            {/* Right: Image - desktop only */}
-            <div className="hidden md:block">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
-                alt="David Clunie"
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -67,13 +55,15 @@ export default function About() {
             {t("about.servicesHeading")}
           </h2>
 
-          <div className="flex flex-wrap gap-6 mb-12 justify-center">
+          <div
+            className="grid grid-cols-[repeat(auto-fit,minmax(350px,500px))] gap-6 mb-12 justify-center"
+            style={{ minWidth: 0 }}
+          >
             {t("about.services", { returnObjects: true }).map(
               (service: { title: string; subtitle: string }, index: number) => (
                 <div
                   key={index}
-                  className="bg-brand-white rounded-lg p-8 text-brand-black shadow-sm hover:shadow-md transition-shadow border border-light-accent border-opacity-30 w-full sm:w-80"
-                  style={{ maxWidth: "300px" }}
+                  className="bg-brand-white rounded-lg p-8 text-brand-black shadow-sm hover:shadow-md transition-shadow border border-light-accent border-opacity-30 w-full"
                 >
                   <h3 className="font-heading font-bold text-lg-text mb-4 text-brand-black">
                     {service.title}

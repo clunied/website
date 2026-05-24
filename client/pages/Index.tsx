@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="min-h-screen bg-brand-black text-brand-white flex items-center justify-center px-4 py-20 md:py-0">
+      <section className="h-[90vh] pt-48 bg-brand-black text-brand-white flex items-center justify-center px-4 py-20 md:py-0">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading text-h2 font-bold mb-6 leading-tight">
             {t("hero.welcome")}
@@ -20,11 +20,7 @@ export default function Index() {
             {t("hero.description")}
           </p>
           <div className="flex flex-col gap-8 justify-center items-center">
-            <Button
-              href="https://wa.me/447715848437"
-              variant="primary"
-              external
-            >
+            <Button href="/contact" variant="primary">
               {t("hero.primaryCta")}
             </Button>
             <Button
@@ -45,11 +41,9 @@ export default function Index() {
           backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/6452437a9c32675e48bf7484/7641e0d5-eaae-45fb-9886-d35f3b268376/637525d59ffb3-1668621781.jpg')`,
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-brand-black opacity-30"></div>
+        <div className="absolute inset-0 bg-brand-black/30" />
 
-        {/* Content */}
-        <div className="relative max-w-3xl mx-auto text-center px-4 z-10" style={{ marginLeft: "170px", marginRight: "auto" }}>
+        <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-h2 font-bold text-brand-white leading-tight">
             {t("section.headline")}
           </h2>
