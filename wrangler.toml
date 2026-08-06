@@ -1,0 +1,30 @@
+# Cloudflare Worker for the contact form email sender.
+#
+# IMPORTANT: `name` must exactly match the worker that is already deployed and that
+# VITE_EMAIL_ENDPOINT points at. A mismatch creates a SECOND, separate worker on a new
+# URL — the form would keep hitting the old one and this code would never run.
+# Check the name at Cloudflare dashboard > Compute (Workers) > Workers & Pages.
+name = "yellow-salad-ba6f"
+
+main = "cf_worker_email_sender.js"
+compatibility_date = "2026-08-06"
+
+# Non-secret config. These MUST live here rather than in the dashboard: `wrangler deploy`
+# overwrites dashboard-set plain-text vars, so anything not listed here gets wiped on
+# the next deploy. Fill in the real values before deploying.
+[vars]
+TO_EMAIL = "david@davidcluniecoaching.com"
+FROM_EMAIL = "david@davidcluniecoaching.com"
+FROM_NAME = "Website Contact"
+
+# MAILERSEND_API_TOKEN is a secret and is deliberately NOT listed here — secrets are
+# stored encrypted by Cloudflare and survive deploys. Set it once with:
+#   npx wrangler secret put MAILERSEND_API_TOKEN
+# or via the dashboard: the worker > Settings > Variables and Secrets > Add secret.
+
+# If the worker is served from a custom domain or route rather than its workers.dev
+# subdomain, declare it here so deploys don't drop it. Leave commented out if the
+# endpoint is the *.workers.dev URL.
+# routes = [
+#   { pattern = "api.davidcluniecoaching.com", custom_domain = true }
+# ]
