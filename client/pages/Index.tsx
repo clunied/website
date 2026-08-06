@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="h-[90vh] pt-48 bg-brand-black text-brand-white flex items-center justify-center px-4 py-20 md:py-0">
+      <section className="min-h-[90svh] bg-brand-black text-brand-white flex items-center justify-center px-4 pt-48 pb-20 md:pb-0">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading text-h2 font-bold mb-6 leading-tight">
             {t("hero.welcome")}
@@ -36,7 +36,7 @@ export default function Index() {
 
       {/* Science Led Section with Background */}
       <section
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center py-20 md:py-0"
+        className="relative min-h-[100svh] bg-cover bg-center bg-no-repeat flex items-center justify-center py-20 md:py-0"
         style={{
           backgroundImage: `url('/images/portrait.webp')`,
         }}

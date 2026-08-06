@@ -79,7 +79,7 @@ export default function Contact() {
 
   return (
     <div
-      className="w-full relative min-h-screen bg-cover bg-center bg-no-repeat"
+      className="w-full relative min-h-[100svh] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url('/images/portrait.webp')`,
       }}
