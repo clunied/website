@@ -2,6 +2,15 @@ import Button from "@/components/Button";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+// VITE_EMAIL_ENDPOINT is inlined at build time and is easy to set without a scheme. A
+// schemeless value is not an absolute URL, so fetch() would resolve it against the site's
+// own origin and POST to Pages (405) instead of reaching the worker.
+function normaliseEndpoint(raw: string | undefined) {
+  const value = raw?.trim();
+  if (!value) return undefined;
+  return /^https?:\/\//i.test(value) ? value : `https://${value}`;
+}
+
 export default function Contact() {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
@@ -14,7 +23,7 @@ export default function Contact() {
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
-  const emailEndpoint = import.meta.env.VITE_EMAIL_ENDPOINT;
+  const emailEndpoint = normaliseEndpoint(import.meta.env.VITE_EMAIL_ENDPOINT);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -27,14 +36,14 @@ export default function Contact() {
     e.preventDefault();
     setSubmitError(null);
 
-    if (!emailEndpoint?.trim()) {
+    if (!emailEndpoint) {
       setSubmitError(t("contact.errorNoEndpoint"));
       return;
     }
 
     setSubmitting(true);
     try {
-      const res = await fetch(emailEndpoint.trim(), {
+      const res = await fetch(emailEndpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
