@@ -19,7 +19,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="md:block">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd1ac218daa20400ba8f0d8055e0dbb23%2Fc9bc673ff1d541d48d17e9f29698491c?format=webp"
+                src="/images/about.jpeg"
                 alt="David Clunie"
                 className="w-full h-auto rounded-lg"
               />
